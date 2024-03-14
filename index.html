@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"rel="stylesheet">
+<title>Controle de Ponto</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Calcule a sua hora</h1>
+<h2>Selecione a sua carga horária</h2>
+<select id="cargaHoraria">
+  <option value="-">-</option> 
+  <option value="04:00">04:00</option>
+  <option value="06:00">06:00</option>
+  <option value="07:20">07:20</option>
+  <option value="08:00">08:00</option>
+  <option value="08:48">08:48</option>
+</select>
+
+<h2>Insira seus horários</h2>
+Entrada: <input type="time" id="entrada"><br>
+Saída Intervalo: <input type="time" id="saidaIntervalo"><br>
+Volta Intervalo: <input type="time" id="voltaIntervalo"><br>
+Saída: <input type="time" id="saida"><br>
+<button onclick="calcularHoras()">Calcular Horas</button>
+
+<h2>Resultados:</h2>
+<div>Primeiro período: <span id="primeiroPeriodo"></span></div>
+<div>Segundo período: <span id="segundoPeriodo"></span></div>
+<div>Intervalo: <span id="intervalo"></span></div>
+<div>Horas: <span id="horaExtra"></span></div>
+<div>Tempo total de trabalho: <span id="totalTrabalhado"></span></div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
